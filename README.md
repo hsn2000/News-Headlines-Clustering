@@ -29,13 +29,13 @@ To cluster the word-sequences extracted from word-of graph, we perform hierarchi
 
 ### Data and Results:<br>
 As we have mention we have used hierarchal clustering (agglomerative). We’ve implemented its four types to compare the accuracy of the clustering.
-1.	Single-Linkage clustering: 
+1.	Single-Linkage clustering:           
 It is based on grouping clusters in bottom-up fashion (agglomerative clustering), at each step combining two clusters that contain the closest pair of elements not yet belonging to the same cluster as each other.
-2.	Complete-Linkage clustering:
+2.	Complete-Linkage clustering:             
 It is one of several methods of agglomerative hierarchical clustering. Complete-Link clusters at step are maximal sets of points that are completely linked with each other via links of similarity. The method is also known as farthest neighbor clustering.
-3.	Average-Linkage clustering:
+3.	Average-Linkage clustering:                    
 In Average linkage clustering, the distance between two clusters is defined as the average of distances between all pairs of objects, where each pair is made up of one object from each group.
-4.	Ward-Linkage clustering:
+4.	Ward-Linkage clustering:                           
 Ward suggested a general agglomerative hierarchical clustering procedure, where the criterion for choosing the pair of clusters to merge at each step is based on the optimal value of an objective function.
 
 By comparing different hierarchal linkage method we’ve concluded on the basis of Silhouette Score that Average-Linkage clustering performs better than others although the single-linkage cluster is fast but not perform well on cleanly separated globular clusters. 
