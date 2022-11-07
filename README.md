@@ -11,9 +11,9 @@ Python was used to create the algorithm, which was then run on Google Colab, nx.
 The document is represented as a word graph, which is connected to an un-weighted directed graph with vertices representing unique words and edges representing the relationship between the words inside the adjustable window size. The order in which the words were employed determines the orientation of the edges. The basic premise is that all of the words in the text have relationships with each other within the window size, beyond which the relationship is ignored. This method links all co-occurring keywords without considering their meanings.
 
 
-<img height="300px" src="https://cdn.wccftech.com/wp-content/uploads/2021/07/Spotify.jpg">
+<img height="300px" src="https://github.com/hsn2000/News-Headlines-Clustering/blob/main/word_of_graph_example.jpg">
 
-                The Word-of-Graph of the document containing news headline "act fire witnesses must be aware of defamation"
+       The Word-of-Graph of the document containing news headline "act fire witnesses must be aware of defamation"
 
 An ordered sequence of two or more words is called a word sequence. The document treated as input to the word-sequence is the graph-of-word. We are using two word pairs as a sequence in this approach. The algorithm starts with the first word present in the graph and traverses the entire graph word by word and extracts the two adjacent words that have an edge between them. So we obtain sequences like w1 = {information, retrieval}, w2 = {information, resources} etc. The list of entire sequences present in the document is the final representation of the document and they maintain the correlation between the terms as well the context of the text is intact. 
 
